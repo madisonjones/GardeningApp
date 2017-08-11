@@ -1,0 +1,60 @@
+html { 
+  background: url(startPageBackground.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#navbar {
+	background-color: #515254;
+	font-weight: bolder;
+	padding: 5px; 
+
+}
+
+.navbar-item {
+	color: white;
+	font-size: 16px;
+}
+
+#sixA {
+	background-color: #3754ba; 
+	color: white;
+}
+#sixB {
+	background-color: #85c166;
+	color: white;
+}
+#sevenA {
+	background-color: #55a52c;
+	color: white;
+}
+#sevenB {
+	background-color: #2b5615;
+	color: white;
+}
+#eightA {
+	background-color: #d1f21a;
+	color: white;
+}
+#eightB {
+	background-color: #cc7633;
+	color: white;
+}
+
+input {
+	color: black;
+}
+
+#greeting, #option, #findFloraHead {
+	font-size: 52px;
+	color: #172130;
+	font-family: 'Pacifico', cursive;
+	text-align: right;
+
+}
+
+#option {
+	font-size: 36px;
+}

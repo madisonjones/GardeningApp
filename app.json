@@ -1,0 +1,15 @@
+{
+  "name": "GardeningApp",
+  "scripts": {
+  },
+  "env": {
+  },
+  "formation": {
+  },
+  "addons": [
+
+  ],
+  "buildpacks": [
+
+  ]
+}

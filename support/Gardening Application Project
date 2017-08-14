@@ -1,0 +1,7 @@
+Gardening Application Project
+
+Description:  We will be creating an application that contains information on plants native to North Carolina, including growth height and width, water and light requirements, and hardiness zones.  Users will be able to search for plants using a map of North Carolina that is broken out by zone.
+
+Spec:  We will be using the Google Charts API to render the map and the Elastic Search API to provide search capabilities to the firebase database we will be using on the back end of our application.  We will be using Bulma to design the UI and we may also be using additional Google Map or location API's as needed.  Data will be imported into the database using Google sheets using a Firebase App Script. Users will be able to search for plants by type, zone, common name or other requirements.
+
+We will be building a basic working design of this spec and if we have time we will be adding a "My Project" section where users will be able to save plants they want to use in their garden.

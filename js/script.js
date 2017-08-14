@@ -8,8 +8,6 @@ var btn = document.getElementById("myBtn");
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("delete")[0];
 
-var add = document.getElementById("addToGarden");
-
 // When the user clicks on the button, open the modal 
 btn.onclick = function() {
     modal.style.display = "block";
@@ -18,10 +16,6 @@ btn.onclick = function() {
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
     modal.style.display = "none";
-}
-
-add.onclick = function() {
-  modal.style.display = "none";
 }
 
 // When the user clicks anywhere outside of the modal, close it

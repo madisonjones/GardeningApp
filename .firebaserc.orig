@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "default": "garden-db",
+    "staging": "garden-db"
+  }
+}

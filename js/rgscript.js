@@ -19,7 +19,7 @@ helper.on('result', function(content) {
 function renderHits(content) {
   $('#container').html(function(hit) {
     return $.map(content.hits, function(hit) {
-      return '<li>' + hit + '</li>';
+      return '<li>' + hit._highlightResult.commonName.value + '</li>';
     });
   });
   arr = content.hits;

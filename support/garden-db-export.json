@@ -1,0 +1,30 @@
+{
+  "Shrub_Deciduous" : {
+    "bloomTime" : "April, May",
+    "botannicalName" : "Rhododend canescens",
+    "commonName" : "Piedmont Azalea",
+    "flowerColor" : "white-pink",
+    "foliageColor" : "Green",
+    "height" : "6-15 feet",
+    "light" : "Partial sun",
+    "spread" : "10-12 feet",
+    "subtype" : "Deciduous",
+    "type" : "Shrub",
+    "water" : "Moderate",
+    "zone" : "2017-06-09T04:00:00.000Z"
+  },
+  "Tree_Deciduous" : {
+    "bloomTime" : "May",
+    "botannicalName" : "Rhamnus caroliniana",
+    "commonName" : "Carolina Buckthorn",
+    "flowerColor" : "yellow-green",
+    "foliageColor" : "Green",
+    "height" : "20 feet",
+    "light" : "Partial sun",
+    "spread" : "10-15 feet",
+    "subtype" : "Deciduous",
+    "type" : "Tree",
+    "water" : "Moderate",
+    "zone" : "2017-05-09T04:00:00.000Z"
+  }
+}

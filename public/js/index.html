@@ -65,10 +65,6 @@
 <div class="columns">
 	<div class="column is-11 is-size-1-touch">
 		<h1 id="findFloraHead">Find The Ideal Flora For <br>Your Garden!</h1>
-		
-		<input type="text" autocomplete="off" id="search-box"/>
-		<ul id="container"></ul>
-		
 	</div>
 </div>
 
@@ -76,27 +72,73 @@
 	<div class="column is-6">
 		<div id="map" style="width:100%; height:400px;"></div>
 	</div>	
+	<div class="column is-4">
+		<div class="control">
+	  		<div class="select field-label is-medium">
+	    		<select>
+	      		<option>Pick Your Hardiness Zone!</option>
+	      		<option id="sixA">6A</option>
+	      		<option id="sixB">6B</option>
+	      		<option id="sevenA">7A</option>
+	      		<option id="sevenB">7B</option>
+	      		<option id="eightA">8A</option>
+	      		<option id="eightB">8B</option>
+	    		</select>
+	  		</div><br>
+	  		<div class="select field-label is-medium">
+	    		<select>
+	      		<option>Choose Your Flora Type </option>
+	      		<option>Tree</option>
+	      		<option>Shrub</option>
+	      		<option>Flower</option>
+	      		</select>
+	      	</div>
+	      	<div class="select field-label is-medium">
+	      		<select>
+	      			<option>How Much Sunlight Does Your Yard Get?</option>
+	      			<option>None</option>
+	      			<option>2-4 Hours Daily</option>
+	      			<option>4-6 Hours Daily</option>
+	      			<option>6+ Hours Daily</option>
+	      		</select>
+  			</div><br><br>
+  			<div class="field is-medium">
+  			  <label class="label"></label>
+  			  <div class="control">
+  			    <input class="input is-medium" id="search-box" type="text" placeholder="Or Search By Name!">
+  			  </div>
+  			</div>
+  			<a id="myBtn" class="button is-success field-label is-medium">Find Plants!</a>
+		</div>
+	</div>
+</div>
+
+<article id="myModal" class="message is-dark modal">
+  <div class="message-header">
+    <p id="plantName">Plant Name</p>
+    <button class="delete" aria-label="delete"></button>
+  </div>
+  <div class="message-body">
+  	<img src="images/flowerPlaceholder.jpg" height="100px" width="100px"><br>
+	Common Name: <span id="commonName"></span><br>
+	Scientific Name: <span id="scientificName"></span><br>
+	Sunlight: <span id="sunlight"></span><br>
+	Watering Needs: <span id="wateringNeeds"></span><br>
+	<button class="button is-success" id="addToGarden">Add To My Garden!</button>
+  </div>
+</article>
+
 
 
 	<!--jQuery-->
-	<script src="https://code.jquery.com/jquery-3.2.1.min.js"	integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-	  crossorigin="anonymous"></script>
-	  
-	<!--Algoliasearch-->
-	<script src="https://cdn.jsdelivr.net/algoliasearch/3.22.1/algoliasearch.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/algoliasearch-helper@2.21.2/dist/algoliasearch.helper.min.js"></script>
-
-	<!--Firebase APIs-->
-	<script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
-	<script src="https://www.gstatic.com/firebasejs/4.2.0/firebase-database.js"></script>
-	<script src="https://www.gstatic.com/firebasejs/4.2.0/firebase-app.js"></script>
-	<script src="https://www.gstatic.com/firebasejs/4.2.0/firebase-auth.js"></script>
+	<script src="http://code.jquery.com/jquery-3.2.1.min.js"	integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  	crossorigin="anonymous"></script>
 
     <!--Google Maps API -->
   	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA9rWamTh5aLrB75EB6BaSWaxrLY0szceo&callback=myMap"></script>
 
 	<!--javascript -->
-	<script src="js/rgscript.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
 
 
 </body>

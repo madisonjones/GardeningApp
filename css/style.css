@@ -115,6 +115,16 @@ table.dataTable {
   border-spacing: 0;
 }
 
+img {
+	align-content: right;
+	margin-right: -200px;
+	border-radius: 10px;
+ }
 
+ img:hover {
+ 	opacity: .7;
+ }
 
- 
+.is-2 {
+	text-align: right;
+}

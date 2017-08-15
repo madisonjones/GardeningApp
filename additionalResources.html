@@ -17,6 +17,7 @@
     <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
 
 
+
 </head>
 
 <body>
@@ -26,7 +27,6 @@
 	  		<div class="navbar-brand">
 	    		<a class="navbar-item" href="OpeningPage.html">
 					Gardening in North Carolina</a>
-	    	</div>
 	    	
 				<a class="navbar-item is-right" href="index.html">
 	 	 			Find a Plant!</a>
@@ -34,6 +34,7 @@
 	  				My Gardening Project</a>
 				<a class="navbar-item is-right" href="additionalResources.html">
 	 	 			Additional Resources</a>
+	 	 	</div>
 		</nav>
 	</div>
 
@@ -43,27 +44,47 @@
 		</div>
 	</div>
 
+	<div class="columns">
+		<div class="column is-1"></div>
+		<div id="videoQuery" class="column is-5">
+  			<div class="field is-medium" id="search-form">
+  			  <label class="label"></label>
+  			  <div class="control">
+  			    <input class="input is-medium search-field" id="query" type="text" placeholder="Find a Video!">
+  			  </div>
+  			</div>
+  			<a id="search-btn" class="button is-success field-label is-medium">Go!</a>
+            <div id="video-container"></div>
+            <ul id="results"></ul>
+		</div>
+		<div class="column is-3">
+			<a data-pin-do="embedBoard" data-pin-board-width="350" data-pin-scale-height="400" data-pin-scale-width="90" href="https://www.pinterest.com/bhg/bloggers-best-garden-ideas/"></a>		
+		</div>
+		<div class="column is-2">
+	      	<a href="http://www.pikenursery.com/" target="_blank">
+				<img id="usda" src="images/pike.jpeg" width="150" height="150">
+			</a><br>
+	    	<a href="http://www.gardeners.com/home/" target="_blank">
+	    		<img src="images/gardeners.jpg" width="150" height="175">
+	    	</a><br>
+	    	<a href="http://www.greenhousemegastore.com/category/garden-supplies" target="_blank">
+	    		<img src="images/greenhouse.png" width="150" height="175">
+	    	</a><br>
+	    </div>
+	    <div class="column is-1"></div>
 
-<div class="tile is-ancestor">
-  <div class="tile is-1 is-vertical">
-  </div>
-  <div class="tile is-2 is-vertical box is-dark">
-      	<a href="https://www.nal.usda.gov/home-gardening" target="_blank">
-			<img id="usda" src="images/USDA.jpg" width="150" height="150"></a><br>
-		<a href="https://garden.org/" target="_blank">
-			<img src="images/gardenOrg.png" width="150" height="150"></a><br>
-    	<a href="http://ahsgardening.org/gardening-resources" target="_blank">
-    		<img src="images/ahs.png" width="150" height="150"></a><br>
-  </div>
+	</div>
+
 
 		<!--jQuery-->
-		<script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
 	  	crossorigin="anonymous"></script>
 
-	  	<script src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>
-
 		<!--javascript -->
- 	 <!--   <script type="text/javascript" src="js/script.js"></script> -->
+ 	 <script type="text/javascript" src="js/video.js"></script>
+
+
+ 	 <script async defer src="//assets.pinterest.com/js/pinit.js"></script>
 
 
 </body>

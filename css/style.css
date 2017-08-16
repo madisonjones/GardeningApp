@@ -87,7 +87,7 @@ i {
 	border-radius: 12px;
 }
 
-select, input {
+.select, .input {
 	border-radius: 12px;
 }
 
@@ -104,16 +104,7 @@ article {
 	margin-top: 10%;
 }
 
-/*
- * Table styles
- */
-table.dataTable {
-  width: 100%;
-  margin: 0 auto;
-  clear: both;
-  border-collapse: separate;
-  border-spacing: 0;
-}
+
 
 img {
 	align-content: right;
@@ -127,3 +118,8 @@ img {
 .is-2 {
 	text-align: right;
 }
+
+.navbar-item {
+	border-radius: 10px;
+}
+

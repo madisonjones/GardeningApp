@@ -23,7 +23,6 @@
 <script>
 
 	function myMap() {
-		console.log("hi!")
 		var mapProp= {
 		    center:new google.maps.LatLng(35.2271, -79.8431),
 		    zoom:6,
@@ -105,7 +104,11 @@
   			<div class="field is-medium">
   			  <label class="label"></label>
   			  <div class="control">
+  			  	<pre id=“container”></pre>
   			    <input class="input is-medium" id="search-box" type="text" placeholder="Or Search By Name!">
+  			  </div>
+  			  	<pre id="container"></pre>
+  			  	<input class="input is-medium" type="text" autocomplete="off" id="search-box"/>
   			  </div>
   			</div>
   			<a id="myBtn" class="button is-success field-label is-medium">Find Plants!</a>
@@ -134,12 +137,24 @@
 	<script src="http://code.jquery.com/jquery-3.2.1.min.js"	integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
   	crossorigin="anonymous"></script>
 
+
+  	<!--Algoliasearch-->
+  	<script src="https://cdn.jsdelivr.net/algoliasearch/3.22.1/algoliasearch.min.js"></script>
+  	<script src="https://cdn.jsdelivr.net/npm/algoliasearch-helper@2.21.2/dist/algoliasearch.helper.min.js"></script>
+
+  	<!--Firebase APIs-->
+  	<script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
+  	<script src="https://www.gstatic.com/firebasejs/4.2.0/firebase-database.js"></script>
+  	<script src="https://www.gstatic.com/firebasejs/4.2.0/firebase-app.js"></script>
+  	<script src="https://www.gstatic.com/firebasejs/4.2.0/firebase-auth.js"></script>
+
     <!--Google Maps API -->
   	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA9rWamTh5aLrB75EB6BaSWaxrLY0szceo&callback=myMap"></script>
 
 	<!--javascript -->
     <script type="text/javascript" src="js/script.js"></script>
-
+		<!--javascript -->
+	<script src="js/rgscript.js"></script>
 
 </body>
 </html>

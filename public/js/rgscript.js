@@ -21,7 +21,6 @@ function renderHits(content) {
       return '<li>' + hit._highlightResult.commonName.value + '</li>';
     });
   });
-
 }
 $('#search-box').on('keyup', function() {
   helper.setQuery($(this).val())

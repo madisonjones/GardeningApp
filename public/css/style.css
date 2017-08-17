@@ -1,5 +1,5 @@
 html { 
-  background: url(startPageBackground.jpg) no-repeat center center fixed; 
+  background: url(../images/startPageBackground.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -43,10 +43,6 @@ html {
 	color: white;
 }
 
-input {
-	color: black;
-}
-
 #greeting, #option, #findFloraHead {
 	font-size: 52px;
 	color: #172130;
@@ -60,7 +56,7 @@ input {
 }
 
 footer {
-	background color: #172130;
+	background-color: #172130;
 	color: white;
 }
 
@@ -87,7 +83,7 @@ i {
 	border-radius: 12px;
 }
 
-select, input {
+.select, .input {
 	border-radius: 12px;
 }
 
@@ -104,16 +100,11 @@ article {
 	margin-top: 10%;
 }
 
-/*
- * Table styles
- */
-table.dataTable {
-  width: 100%;
-  margin: 0 auto;
-  clear: both;
-  border-collapse: separate;
-  border-spacing: 0;
-}
+
+img {
+	align-content: right;
+	border-radius: 10px;
+ }
 
 img {
 	align-content: right;
@@ -127,3 +118,47 @@ img {
 .is-2 {
 	text-align: right;
 }
+
+.navbar-item {
+	border-radius: 10px;
+}
+
+.pinboard,
+.suppliers {
+	font-size: 20px;
+}
+* {
+	font-family: 'helvetica', sans-serif;
+  }
+  
+  #search-box {
+	margin: 1em 1em 3em;
+	width: calc(100% - 2em);
+	padding: 1em;
+	border: 1px solid #ccc;
+	border-radius: 2px;
+	box-sizing: border-box;
+  }
+  
+  #container {
+	max-width: 150px;
+	width: 100%;
+	float: left;
+	padding: 0 1em;
+	margin: 0;
+	list-style: none;
+	background-color: white;
+  }
+  
+  #container {
+	max-width: calc(100% - 4em);
+  }
+  
+  #container .hit {
+	padding: 8px 0;
+  }
+  
+  #container em {
+	background: yellow;
+	font-style: normal;
+  }

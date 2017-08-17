@@ -1,6 +1,6 @@
 var dataSet = [
-    [ "Piedmont Azalea", "Flower", "High", "2-3 times a week", "8a", "$320,800" ],
-    [ "American Sweetgum", "Tree", "low", "Once a week", "7b", "$170,750" ],
+    [ "Piedmont Azalea", "Flower", "Partial Sun", "Moderate", "8a", "Rhododend canescens" ],
+    [ "American Sweetgum", "Tree", "Full Sun", "Moderate", "7b", "Liquidamber stryaciflua" ],
 
 ];
  
@@ -10,10 +10,10 @@ $(document).ready(function() {
         columns: [
             { title: "Name" },
             { title: "Type" },
-            { title: "Sunlight" },
+            { title: "Light" },
             { title: "Water" },
             { title: "Hardiness Zone" },
-            { title: "Scientific Name" }
+            { title: "Botannical Name" }
         ]
     } );
 } );

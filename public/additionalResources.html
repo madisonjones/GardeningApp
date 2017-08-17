@@ -25,11 +25,11 @@
 	<div class="container is-widescreen">
 		<nav id="navbar" class="navbar is-transparent">
 	  		<div class="navbar-brand">
-	    		<a class="navbar-item" href="OpeningPage.html">
+	    		<a class="navbar-item" href="index.html">
 					Gardening in North Carolina</a>
 	    	
-				<a class="navbar-item is-right" href="index.html">
-	 	 			Find a Plant!</a>
+				<a class="navbar-item is-right" href="info.html">
+	 	 			Gardening Information</a>
 				<a class="navbar-item is-right" href="myProject.html">
 	  				My Gardening Project</a>
 				<a class="navbar-item is-right" href="additionalResources.html">
@@ -50,7 +50,7 @@
   			<div class="field is-medium" id="search-form">
   			  <label class="label"></label>
   			  <div class="control">
-  			    <input class="input is-medium search-field" id="query" type="text" placeholder="Find a Video!">
+  			    <input class="input is-medium search-field" id="query" type="text" placeholder="Find a Gardening Video!">
   			  </div>
   			</div>
   			<a id="search-btn" class="button is-success field-label is-medium">Go!</a>
@@ -58,17 +58,19 @@
             <ul id="results"></ul>
 		</div>
 		<div class="column is-3">
+			<strong><h1 class="pinboard">Click to discover Gardening Pins</h1></strong>
 			<a data-pin-do="embedBoard" data-pin-board-width="350" data-pin-scale-height="400" data-pin-scale-width="90" href="https://www.pinterest.com/bhg/bloggers-best-garden-ideas/"></a>		
 		</div>
 		<div class="column is-2">
+			<strong><h1 class="suppliers">Shop for your Garden</h1></strong>
 	      	<a href="http://www.pikenursery.com/" target="_blank">
-				<img id="usda" src="images/pike.jpeg" width="150" height="150">
+				<img id="usda" src="images/pike.jpeg" width="125" height="125">
 			</a><br>
 	    	<a href="http://www.gardeners.com/home/" target="_blank">
-	    		<img src="images/gardeners.jpg" width="150" height="175">
+	    		<img src="images/gardeners.jpg" width="125" height="125">
 	    	</a><br>
 	    	<a href="http://www.greenhousemegastore.com/category/garden-supplies" target="_blank">
-	    		<img src="images/greenhouse.png" width="150" height="175">
+	    		<img src="images/greenhouse.png" width="120" height="100">
 	    	</a><br>
 	    </div>
 	    <div class="column is-1"></div>
@@ -78,14 +80,14 @@
 
 		<!--jQuery-->
 		<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-	  	crossorigin="anonymous"></script>
+		 crossorigin="anonymous"></script>
 
 		<!--javascript -->
- 	 <script type="text/javascript" src="js/video.js"></script>
+		<script type="text/javascript" src="js/video.js"></script>
 
-
- 	 <script async defer src="//assets.pinterest.com/js/pinit.js"></script>
-
+		<!--Pinterest-->
+		<script src="//assets.pinterest.com/js/pinit.js" async type="text/javascript"></script>
+		<!--script src="../gardeningapp/widgets-master/pinit_main.js"></script-->
 
 </body>
 </html>

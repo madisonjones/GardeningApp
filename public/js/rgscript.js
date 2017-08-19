@@ -1,57 +1,34 @@
 // Algolia client. Mandatory to instantiate the Helper.
-var algolia = algoliasearch('36LOU7P2KC', '4705232079a49f2115c4a0e1a5dd58fa');
+var client = algoliasearch('36LOU7P2KC', '4705232079a49f2115c4a0e1a5dd58fa');
+var index = client.initIndex('garden_index');
 
-// Algolia Helper
-var helper = algoliasearchHelper(algolia, 'garden_index', {
-  hitsPerPage: 5,
-  getRankingInfo: true
+
+client.initIndex('YourIndexName').setSettings({
+  "searchableAttributes": [
+    "commonName",
+    "type",
+    "light",
+    "water"
+  ],
+  "customRanking": [
+    "desc(points)"
+  ]
 });
 
-// Bind the result event to a function that will update the results
-helper.on("result", searchCallback);
-
-// Configuration for the UI
-var $inputfield = $("#search-box");
-var $hits = $('#hits');
-
-// When there is a new character input:
-// - update the query
-// - trigger the search
-$inputfield.keyup(function(e) {
-  helper.setQuery($inputfield.val()).search();
+//initialize autocomplete on search input (ID selector must match)
+autocomplete('#aa-search-input',
+{ hint: false }, {
+    source: autocomplete.sources.hits(index, {hitsPerPage: 5}),
+    //value to be displayed in input control after user's suggestion selection
+    displayKey: 'name',
+    //hash of templates used when rendering dataset
+    templates: {
+        //'suggestion' templating function used to render a single suggestion
+        suggestion: function(suggestion) {
+          return '<span>' +
+            suggestion._highlightResult.commonName.value + '</span><span>' +
+            suggestion._highlightResult.type.value + '</span>';
+        }
+    }
 });
 
-// Trigger a first search, so that there is a page with results
-// from the start.
-helper.search();
-
-// Result event callback
-function searchCallback(content) {
-  if (content.hits.length === 0) {
-    // If there is no result we display a friendly message
-    // instead of an empty page.
-    $hits.empty().html("No results :(");
-    return;
-  }
-
-	// Hits/results rendering
-  renderHits($hits, content);
-}
-
-function renderHits($hits, results) {
-  // Scan all hits and display them
-  var hits = results.hits.map(function renderHit(hit) {
-    // We rely on the highlighted attributes to know which attribute to display
-    // This way our end-user will know where the results come from
-    // This is configured in our index settings
-    var highlighted = hit._highlightResult;
-    var attributes = $.map(highlighted, function renderAttributes(attribute, name) {
-      return (
-        '<div class="attribute">' +
-        '<strong>' + name + ': </strong>' + attribute.value +
-        '</div>');
-    }).join('');
-    return '<div class="hit panel">' + attributes + '</div>';
-  });
-  $hits.html(hits);
-}

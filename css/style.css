@@ -157,7 +157,7 @@ h2, h3 {
 	outline: 0;
 	border-color: #3a96cf;
 	box-shadow: 4px 4px 0 rgba(58, 150, 207, 0.1); }
-.aa-input-icon {
+/*.aa-input-icon {
 	height: 16px;
 	width: 16px;
 	position: absolute;
@@ -165,7 +165,7 @@ h2, h3 {
 	right: 16px;
 	-webkit-transform: translateY(-50%);
 	transform: translateY(-50%);
-	fill: #e4e4e4; }
+	fill: #e4e4e4; }*/
 .aa-hint {
 	color: #e4e4e4; }
 .aa-dropdown-menu {

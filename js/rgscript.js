@@ -1,3 +1,4 @@
+//Code written by Renee Geffre
 // Algolia client. Mandatory to instantiate the Helper.
 var client = algoliasearch('36LOU7P2KC', '4705232079a49f2115c4a0e1a5dd58fa');
 var index = client.initIndex('garden_index');

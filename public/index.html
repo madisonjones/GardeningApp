@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">    
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Gardening in North Carolina</title>
+
+<!--font awesome-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!--Bulma-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.0/css/bulma.min.css">
+<!--stylesheet-->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<!--google fonts-->
+	<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+
+</head>
+<body>
+
+	<div class="container is-widescreen">
+		<nav id="navbar" class="navbar is-transparent">
+			<div class="navbar-brand">
+				<a class="navbar-item" href="index.html">
+					Gardening in North Carolina</a>
+
+				<a class="navbar-item fullScreenItems" href="info.html">
+					Gardening Information</a>
+				<a class="navbar-item fullScreenItems" href="myProject.html">
+					My Gardening Project</a>
+				<a class="navbar-item fullScreenItems" href="additionalResources.html">
+					Additional Resources</a>
+			</div>
+    </nav>
+	</div>
+
+	<div class="columns">
+		<div class="column is-11">
+			<h1 id="greeting" class="has-text-centered">Welcome to the Gardeners Corner</h1>
+		</div><br>
+	</div>
+  <section class="section">
+    <h2 class="title">What is the Gardners Corner?</h2>
+     <p>Hello fellow gardeners, this site is designed for anyone who loves
+          to garden or who wants to learn.  We have put together a group of
+          resources to help with everything from finding plants to setting up
+          a watering schedule. In the future there will also be a blog, tools to
+          help you design your garden and an area to talk with other
+          gardeners.  We hope you enjoy it and happy gardening!
+     </p>
+  </section>
+
+  <!-- HTML Markup for Algolia Search box -->
+	<div class="aa-input-container" id="aa-input-container">
+		<input type="search" id="aa-search-input" class="aa-input-search" placeholder="Search for plants.." name="search" autocomplete="off" />
+	</div>
+
+	<!--jQuery-->
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+	 crossorigin="anonymous"></script>
+
+  <!-- Include AlgoliaSearch JS Client and autocomplete.js library -->
+	<script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js"></script>
+
+	<!--Firebase APIs-->
+	<script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/4.2.0/firebase-database.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/4.2.0/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/4.2.0/firebase-auth.js"></script>
+
+	<!--javascript -->
+	<script src="js/rgscript.js"></script>
+
+</body>
+</html>

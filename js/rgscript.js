@@ -1,31 +1,19 @@
-// var algoliasearch = require('algoliasearch');
-// var algoliasearch = require('algoliasearch/reactnative');
-// var algoliasearch = require('algoliasearch/lite');
-// or just use algoliasearch if you are using a <script> tag
-// if you are using AMD module loader, algoliasearch will not be defined in window,
-// but in the AMD modules of the page
-
-var client = algoliasearch("36LOU7P2KC", "8d07c0f7efaa2dc98582aba511f6b4b7");
+//Code written by Renee Geffre
+// Algolia client. Mandatory to instantiate the Helper.
+var client = algoliasearch('36LOU7P2KC', '4705232079a49f2115c4a0e1a5dd58fa');
 var index = client.initIndex('garden_index');
-var client = algoliasearch("36LOU7P2KC", "8d07c0f7efaa2dc98582aba511f6b4b7");
-var helper = algoliasearchHelper(client, 'garden_index');
-var arr;
-
-helper.on('result', function(content) {
-  renderHits(content);
-  console.log(content);
+autocomplete('#aa-search-input',
+    {hint: false}, {
+      source: autocomplete.sources.hits(index, {hitsPerPage: 5}),
+      //value to be displayed in input control after user's suggestion selection
+      displayKey: 'commonName',
+      //hash of templates used when rendering dataset
+      templates: {
+        //'suggestion' templating function used to render a single suggestion
+        suggestion: function(suggestion) {
+          return '<span>' +
+              suggestion._highlightResult.commonName.value + '</span><span>' +
+              suggestion._highlightResult.type.value + '</span>';
+        },
+      },
 });
-
-function renderHits(content) {
-  $('#container').html(function(hit) {
-    return $.map(content.hits, function(hit) {
-      return '<li>' + hit._highlightResult.commonName.value + '</li>';
-    });
-  });
-  arr = content.hits;
-}
-$('#search-box').on('keyup', function() {
-  helper.setQuery($(this).val())
-        .search();
-});
-helper.search();
